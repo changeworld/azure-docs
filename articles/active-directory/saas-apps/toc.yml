@@ -1426,6 +1426,8 @@
         href: dropboxforbusiness-provisioning-tutorial.md
       - name: Dynamic Signal
         href: dynamic-signal-provisioning-tutorial.md
+      - name: Dialpad
+        href: dialpad-provisioning-tutorial.md
       - name: G Suite
         href: google-apps-provisioning-tutorial.md
       - name: GitHub
@@ -1442,6 +1444,8 @@
         href: linkedinsalesnavigator-provisioning-tutorial.md
       - name: Lucidchart
         href: lucidchart-provisioning-tutorial.md
+      - name: Leapsome
+        href: leapsome-provisioning-tutorial.md
       - name: Merchlogix
         href: merchlogix-provisioning-tutorial.md
     - name: N - Z
