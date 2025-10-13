@@ -43,7 +43,7 @@ In this tutorial, you learn how to:
 > [!div class="checklist"]
 > * Convert existing app functionality into a plugin for LangGraph.
 > * Add the plugin to a LangGraph agent and use it in a web app.
-> * Convert existing app functionaltiy into an OpenAPI endpoint for Azure AI Foundry Agent Service.
+> * Convert existing app functionality into an OpenAPI endpoint for Azure AI Foundry Agent Service.
 > * Call an Azure AI Foundry agent in a web app.
 - Assign the required permissions for managed identity connectivity.
 
