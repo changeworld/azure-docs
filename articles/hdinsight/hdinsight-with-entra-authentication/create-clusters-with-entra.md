@@ -47,7 +47,7 @@ Users have to perform the following for setting up Entra ID authentication when 
 
   - Select the desired authentication method: Entra ID 
 
-  - Add one (or more) admin Entra ID user during cluster creation(adding atleast one admin is mandatory).
+  - Add one (or more) admin Entra ID user during cluster creation(adding at least one admin is mandatory).
 
     :::image type="content" source="./media/create-clusters-with-entra/creation-cluster.png" alt-text="Screenshot of HDInsight cluster creation landing page." border="true" lightbox="./media/create-clusters-with-entra/creation-cluster.png":::
 
