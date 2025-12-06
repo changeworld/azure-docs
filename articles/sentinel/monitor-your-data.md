@@ -128,7 +128,7 @@ Refresh your workbook to display updated data. In the toolbar, select one of the
 
     - Auto refresh intervals are also restarted if you manually refresh your data.
 
-    By default, auto refresh is turned off. If you've turned auto-refresh on, it's turned off again each time you close the notebook to optimize perforamnce and prevent it from running in the background. Turn auto refresh back on as needed the next time you open the workbook.
+    By default, auto refresh is turned off. If you've turned auto-refresh on, it's turned off again each time you close the notebook to optimize performance and prevent it from running in the background. Turn auto refresh back on as needed the next time you open the workbook.
 
 ## Print a workbook or save as PDF (Azure portal only)
 
