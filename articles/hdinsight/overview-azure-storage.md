@@ -74,7 +74,7 @@ When you store the data in Azure Storage instead of HDFS, you get several benefi
 Certain MapReduce jobs and packages might create intermediate results that you wouldn't want to store in Azure Storage. In that case, you can choose to store the data in the local HDFS. HDInsight uses DFS for several of these intermediate results in Hive jobs and other processes.
 
 > [!NOTE]  
-> Most HDFS commands (for example, `ls`, `copyFromLocal`, and `mkdir`) work as expected in Azure Storage. Only the commands that are specific to the native HDFS implementation (which is referred to as DFS), such as `fschk` and `dfsadmin`, show different behavior in Azure Storage.
+> Most HDFS commands (for example, `ls`, `copyFromLocal`, and `mkdir`) work as expected in Azure Storage. Only the commands that are specific to the native HDFS implementation (which is referred to as DFS), such as `fsck` and `dfsadmin`, show different behavior in Azure Storage.
 
 ## Next steps
 
