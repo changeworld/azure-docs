@@ -31,7 +31,7 @@ The following key features are available for Pure Storage Cloud:
 - **Thin Provisioning**: Allocate storage space efficiently, reducing wasted capacity, and improving utilization.
 - **Instant Resizing**: Adjust storage volumes without downtime or disruption to applications.
 - **Snapshots**: Create point-in-time copies of data for rapid recovery from data loss or corruption.
-- **Compute and Storage Decoupling**: Decoupling compute and storage resources for independent scaling and efficent resource utilization.
+- **Compute and Storage Decoupling**: Decoupling compute and storage resources for independent scaling and efficient resource utilization.
 
 ## Subscribe to Azure Native Pure Storage Cloud
 
