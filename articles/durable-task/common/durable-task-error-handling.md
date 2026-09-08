@@ -3,7 +3,7 @@ title: "Handle Errors and Retries in Durable Functions"
 description: Learn how to handle errors, configure automatic retries, and set timeouts in Durable Functions and Durable Task SDKs. Explore retry policies, custom retry handlers, and compensation patterns to build resilient orchestrations.
 ms.topic: how-to
 ms.service: durable-task
-ms.date: 04/22/2026
+ms.date: 09/08/2026
 ms.author: hannahhunter
 author: hhunter-ms
 ms.devlang: csharp
@@ -545,6 +545,8 @@ In Java, when you use `ctx.allOf` to run multiple activity calls in parallel, th
 Exception handling in entity functions depends on the Durable Functions hosting model:
 
 # [C#](#tab/csharp)
+
+For the effect of unhandled exceptions on entity state, including changes made in a `finally` block, see [Operation rollback](../durable-functions/durable-functions-dotnet-entities.md#operation-rollback).
 
 <details>
 <summary><b>Isolated worker model</b></summary>
