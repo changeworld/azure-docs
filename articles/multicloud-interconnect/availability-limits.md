@@ -40,7 +40,7 @@ Azure Multicloud Interconnect supports 1 Gbps during preview.
 
 Azure Multicloud Interconnect supports one gateway connection per Multicloud Interconnect.
 
-## Routing Requirements
+## Routing requirements
 
 Microsoft reserves the following resources for internal use:
 
