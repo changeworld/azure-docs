@@ -104,7 +104,7 @@ To restore the backed-up AKS cluster, follow these steps:
    :::image type="content" source="./media/azure-kubernetes-service-cluster-restore/review-restore-tab.png" alt-text="Screenshot shows the Review + restore tab for restore." lightbox="./media/azure-kubernetes-service-cluster-restore/review-restore-tab.png":::
    
    >[!NOTE]
-   >The resources hydrated in the staging resource group and storage account are not automatically cleaned up after the restore job is completed and are to be deleted manually.
+   >The restore job doesn't automatically clean up the resources hydrated in the staging resource group and storage account. Delete these resources manually.
 
 ### Configure item-level restore for AKS cluster
 
