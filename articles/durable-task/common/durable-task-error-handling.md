@@ -546,8 +546,6 @@ Exception handling in entity functions depends on the Durable Functions hosting 
 
 # [C#](#tab/csharp)
 
-For information about how unhandled exceptions affect entity state, including changes made in a `finally` block, see [Operation rollback](../durable-functions/durable-functions-dotnet-entities.md#operation-rollback).
-
 <details>
 <summary><b>Isolated worker model</b></summary>
 
@@ -578,6 +576,8 @@ public static async Task<List<string>> MyOrchestrator(
 <summary><b>In-process model</b></summary>
 
 In Durable Functions with C# in-process, entity functions return their original exception types to the orchestrator.
+
+For information about how unhandled exceptions affect entity state, including changes made in a `finally` block, see [Operation rollback](../durable-functions/durable-functions-dotnet-entities.md?pivots=in-proc#operation-rollback).
 
 ```csharp
 [FunctionName("Function1")]

@@ -22,7 +22,7 @@ Entity functions let you organize application state as a collection of fine-grai
 In this article:
 
 - [Define entity classes](#define-entity-classes) — Class-based and `TaskEntity<TState>` examples
-- [Operation rollback](#operation-rollback) — State changes and unhandled exceptions
+- [Operation rollback](?pivots=in-proc#operation-rollback) — State changes and unhandled exceptions (in-process)
 - [Access entities directly](#access-entities-directly) — Signal, read state, and call from orchestrations
 - [Access entities through interfaces](#access-entities-through-interfaces) — Type-safe proxy access (in-process only)
 - [Entity serialization](#entity-serialization) — JSON serialization and schema evolution
@@ -267,11 +267,9 @@ public void Add(int amount)
 }
 ```
 
-::: zone-end
-
 ## Operation rollback
 
-By default, when an unhandled exception escapes a .NET entity operation, the Durable Functions runtime rolls back the operation's internal effects, including state creation, deletion, or modification and signals sent to other entities. The entity state is restored to its value before the failed operation. This behavior applies to both the in-process and isolated worker models.
+By default, when an unhandled exception escapes a .NET in-process entity operation, the Durable Functions runtime rolls back the operation's internal effects, including state creation, deletion, or modification and signals sent to other entities. The entity state is restored to its value before the failed operation.
 
 This rollback also applies to state changes made in a `finally` block. The `finally` block still executes, but it isn't a commit boundary: the runtime determines whether the operation succeeded after the operation finishes. For example, if an operation calls an external service in a `try` block and clears a persisted message list in `finally`, the list isn't cleared in persisted state if the exception escapes the operation.
 
@@ -280,9 +278,7 @@ To retain state changes for an expected failure, handle the exception inside the
 > [!IMPORTANT]
 > Operation rollback doesn't undo external side effects, such as an HTTP request or a database write. Entity state and external I/O don't form a single transaction, regardless of whether operation rollback is enabled.
 
-::: zone pivot="in-proc"
-
-For .NET in-process apps, you can disable automatic operation rollback by setting `rollbackEntityOperationsOnExceptions` to `false` under `extensions.durableTask` in *host.json*:
+For .NET in-process Durable Functions apps, you can disable automatic operation rollback by setting `rollbackEntityOperationsOnExceptions` to `false` under `extensions.durableTask` in *host.json*:
 
 ```json
 {
@@ -296,13 +292,6 @@ For .NET in-process apps, you can disable automatic operation rollback by settin
 ```
 
 The default value is `true`. When rollback is enabled, entity state is serialized after each successful operation. When it's disabled, state is serialized at the end of the operation batch, and failed operations can leave partially updated state and retain signals they sent. Disable rollback only if your application can handle those partial effects. For more information, see [Durable Functions settings in host.json](durable-functions-host-json-settings.md).
-
-::: zone-end
-
-::: zone pivot="isolated"
-
-> [!NOTE]
-> For .NET isolated Durable Functions apps, rollback is always enabled for unhandled entity-operation exceptions. Durable Functions rolls back the operation's state changes and outgoing signals even if you set `rollbackEntityOperationsOnExceptions` to `false` in *host.json*.
 
 ::: zone-end
 
