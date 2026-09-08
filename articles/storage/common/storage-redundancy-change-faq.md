@@ -147,7 +147,7 @@ A direct **GZRS &rarr; LRS** conversion isn't supported. This conversion require
 - **GZRS &rarr; ZRS**, followed by **ZRS &rarr; LRS**, or
 - **GZRS &rarr; GRS**, followed by **GRS &rarr; LRS**.
 
-When performing a **GZRS &rarr; GRS** conversion, followed by **GRS &rarr; LRS**, you must wait at least 72 hours between the conversions. This temporary delay ensures the consistency and integrity of the account by allowing background processes to complete before making another change.
+When performing a **GZRS &rarr; GRS** conversion, followed by **GRS &rarr; LRS**, you must wait at least 24 hours between the conversions. This temporary delay ensures the consistency and integrity of the account by allowing background processes to complete before making another change.
 
 ### How do I convert my account from GRS to ZRS?
 
@@ -156,7 +156,7 @@ A direct **GRS &rarr; ZRS** conversion isn't supported. This conversion requires
 - **GRS &rarr; GZRS**, followed by **GZRS &rarr; ZRS**.
 - **GRS &rarr; LRS**, followed by **LRS &rarr; ZRS**.
 
-When performing a **GRS &rarr; GZRS conversion** followed by **GZRS &rarr; ZRS**, you must wait at least 72 hours between the conversions. This temporary delay ensures the consistency and integrity of the account by allowing background processes to complete before making another change.
+When performing a **GRS &rarr; GZRS conversion** followed by **GZRS &rarr; ZRS**, you must wait at least 24 hours between the conversions. This temporary delay ensures the consistency and integrity of the account by allowing background processes to complete before making another change.
 
 When you complete the initial **GRS &rarr; LRS** conversion, your storage account temporarily becomes **LRS**, a lower redundancy option. This option offers less durability and availability.
 
@@ -167,7 +167,7 @@ A direct **ZRS &rarr; GRS** conversion isn't supported. This conversion requires
 - **ZRS &rarr; GZRS**, followed by **GZRS &rarr; GRS**, or
 - **ZRS &rarr; LRS**, followed by **LRS &rarr; GRS**.
 
-When performing a **ZRS &rarr; LRS** conversion followed by **LRS &rarr; GRS**, you must wait at least 72 hours between the conversions. This temporary delay ensures the consistency and integrity of the account by allowing background processes to complete before making another change.
+When performing a **ZRS &rarr; LRS** conversion followed by **LRS &rarr; GRS**, you must wait at least 24 hours between the conversions. This temporary delay ensures the consistency and integrity of the account by allowing background processes to complete before making another change.
 
 When you complete the initial **ZRS &rarr; LRS** conversion, your storage account is temporarily held in **LRS**, a lower redundancy option. This option offers much less durability and availability.
 
