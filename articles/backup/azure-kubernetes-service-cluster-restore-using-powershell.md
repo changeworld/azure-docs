@@ -137,7 +137,7 @@ To trigger the restore operation, run the following cmdlets:
     ```
 
     >[!Note]
-    >The resources hydrated in the staging resource group and storage account are not automatically cleaned up after the restore job is completed and are to be deleted manually.
+    >The resources hydrated in the staging resource group and storage account aren't automatically cleaned up after the restore job finishes. You need to delete them manually.
 
 ## Track the restore job for AKS cluster
 
