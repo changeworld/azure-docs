@@ -48,7 +48,7 @@ Microsoft reserves the following resources for internal use:
 - IPv4 prefix: 169.254.255.0/24
 - IPv6 prefix: fc00:ffff:ffff:ffff/120
  
-When configuring connectivity between Microsoft and other cloud providers, use ASNs and IP addresses outside of these reserved ranges.
+When you configure connectivity between Microsoft and other cloud providers, use ASNs and IP addresses outside of these reserved ranges.
 
 ## Pricing
 
