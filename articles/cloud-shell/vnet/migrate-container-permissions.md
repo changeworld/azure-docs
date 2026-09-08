@@ -154,8 +154,8 @@ Get-AzRoleAssignment @getAzRoleAssignmentSplat
 
 ### What happens if I don't add the required role assignment to my virtual network by the deadline?
 
-If the required role assignment isn't added by September 30, 2026, you won't be able to use Cloud
-Shell within your virtual network. To restore access to Cloud Shell you must add the role
+If you don't add the required role assignment by September 30, 2026, you can't use Cloud
+Shell within your virtual network. To restore access to Cloud Shell, you must add the role
 assignment.
 
 ### I don't have permission to create the role assignment. Why?
