@@ -36,7 +36,7 @@ Region availability is subject to change during preview.
 
 Azure Multicloud Interconnect supports 1 Gbps during preview.
 
-## Supported Virtual Network Gateway Connections
+## Supported virtual network gateway connections
 
 Azure Multicloud Interconnect supports one gateway connection per Multicloud Interconnect.
 
