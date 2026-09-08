@@ -138,7 +138,7 @@ A direct **LRS &rarr; GZRS** conversion isn't supported. This specific conversio
 - **LRS &rarr; ZRS**, followed by **ZRS &rarr; GZRS**, or 
 - **LRS &rarr; GRS**, followed by **GRS &rarr; GZRS**.
 
-When performing an **LRS &rarr; ZRS** conversion, followed by **ZRS &rarr; GZRS**, you must wait at least 72 hours between the conversions. This temporary delay ensures the consistency and integrity of the account by allowing background processes to complete before making another change.
+When performing an **LRS &rarr; ZRS** conversion, followed by **ZRS &rarr; GZRS**, you must wait at least 24 hours between the conversions. This temporary delay ensures the consistency and integrity of the account by allowing background processes to complete before making another change.
 
 ### How do I convert my account from GZRS to LRS?
 
@@ -179,7 +179,6 @@ As with [conversion duration](#how-long-does-the-sku-conversion-process-take), t
 
 Zonal conversions involve adding or removing availability zone options to your account. The following list highlights the most common conflicting features or scenarios that can generate errors when attempting a zonal conversion. If you encounter an error, the error message typically provides details about the specific conflict.
 
-- **Object Replication:** Zonal conversions on accounts with object replication (OR) might generate an error. In this case, you can delete your account's OR policies and attempt the conversion again.
 - **NFSv3:** NFSv3 can't be unconfigured. To convert an NFSv3-enabled account to ZRS, you need to perform a *manual migration*. Manual migrations utilize a feature or tool such as AzCopy to migrate the data of your current storage account to a different storage account with the desired redundancy. To learn more about using AzCopy, see [Use AzCopy to copy blobs](storage-use-azcopy-blobs-copy.md).
 - **Archive data:** Accounts containing data within the archive tier can generate errors. Before converting, you should rehydrate archive data to either the cold, cool, or hot tier, and then retry your conversion. You can also delete any archived data before converting.
 - **NFSv4 accounts with public endpoints:** You might encounter issues when attempting to migrate a storage account with a public endpoint. You should disable access to the storage account's public endpoints before retrying your conversion. You can read more about changing account replication in the [Change how a storage account is replicated](redundancy-migration.md) article.
