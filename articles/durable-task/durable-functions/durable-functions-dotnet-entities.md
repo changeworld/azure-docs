@@ -302,7 +302,7 @@ The default value is `true`. When rollback is enabled, entity state is serialize
 ::: zone pivot="isolated"
 
 > [!NOTE]
-> The .NET isolated worker currently doesn't support disabling operation rollback with the `rollbackEntityOperationsOnExceptions` setting in *host.json*.
+> In the current .NET isolated worker, rollback is always enabled for unhandled entity-operation exceptions. The worker rolls back the operation's state changes and outgoing signals even if you set `rollbackEntityOperationsOnExceptions` to `false` in *host.json*.
 
 ::: zone-end
 
