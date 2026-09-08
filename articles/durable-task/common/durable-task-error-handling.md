@@ -546,7 +546,7 @@ Exception handling in entity functions depends on the Durable Functions hosting 
 
 # [C#](#tab/csharp)
 
-For the effect of unhandled exceptions on entity state, including changes made in a `finally` block, see [Operation rollback](../durable-functions/durable-functions-dotnet-entities.md#operation-rollback).
+For information about how unhandled exceptions affect entity state, including changes made in a `finally` block, see [Operation rollback](../durable-functions/durable-functions-dotnet-entities.md#operation-rollback).
 
 <details>
 <summary><b>Isolated worker model</b></summary>

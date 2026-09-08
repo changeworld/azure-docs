@@ -243,7 +243,7 @@ Any method invoked as an operation must satisfy these rules:
 ::: zone pivot="in-proc"
 ### What can operations do?
 
-All entity operations can read and update the entity state, and changes to the state are automatically persisted to storage unless the operation is [rolled back](#operation-rollback). Moreover, operations can perform external I/O or other computations, within the general limits common to all Azure Functions.
+All entity operations can read and update the entity state. The system automatically saves changes to the state to storage unless the operation is [rolled back](#operation-rollback). Operations can also perform external I/O or other computations, within the general limits common to all Azure Functions.
 
 Operations also have access to functionality provided by the `Entity.Current` context:
 
