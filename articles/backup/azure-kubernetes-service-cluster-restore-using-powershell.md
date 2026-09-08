@@ -136,7 +136,7 @@ To trigger the restore operation, run the following cmdlets:
     $restoreJob = Start-AzDataProtectionBackupInstanceRestore -SubscriptionId $vaultSubId  -ResourceGroupName $vaultRgName -VaultName $vaultName -BackupInstanceName $AllInstances[2].BackupInstanceName -Parameter $aksRestoreRequest
     ```
 
->[!NOTE]
+    >[!NOTE]
     >The resources hydrated in the staging resource group and storage account aren't automatically cleaned up after the restore job finishes. You need to delete them manually.
 
 ## Track the restore job for AKS cluster
