@@ -295,7 +295,7 @@ For .NET in-process apps, you can disable automatic operation rollback by settin
 }
 ```
 
-The default value is `true`. When rollback is enabled, entity state is serialized after each operation. When it's disabled, state is serialized at the end of the operation batch, and failed operations can leave partially updated state and retain signals they sent. Disable rollback only if your application can handle those partial effects. For more information, see [Durable Functions settings in host.json](durable-functions-host-json-settings.md).
+The default value is `true`. When rollback is enabled, entity state is serialized after each successful operation. When it's disabled, state is serialized at the end of the operation batch, and failed operations can leave partially updated state and retain signals they sent. Disable rollback only if your application can handle those partial effects. For more information, see [Durable Functions settings in host.json](durable-functions-host-json-settings.md).
 
 ::: zone-end
 
