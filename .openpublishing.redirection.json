@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "articles/site-recovery/site-recovery-whats-new-archive.md",
+      "redirect_url": "/azure/site-recovery/site-recovery-whats-new",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "articles/automation/automation-linux-hrw-install.md",
       "redirect_url": "/azure/automation/extension-based-hybrid-runbook-worker-install",
       "redirect_document_id": false
@@ -7756,6 +7761,56 @@
     {
       "source_path": "articles/vpn-gateway/about-zone-redundant-vnet-gateways.md",
       "redirect_url": "/azure/reliability/reliability-virtual-network-gateway",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/vpn-gateway/point-to-site-vpn-client-certificate-windows-native.md",
+      "redirect_url": "/azure/vpn-gateway/point-to-site-vpn-client-certificate",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/vpn-gateway/point-to-site-vpn-client-certificate-windows-azure-vpn-client.md",
+      "redirect_url": "/azure/vpn-gateway/point-to-site-vpn-client-certificate",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/vpn-gateway/point-to-site-vpn-client-certificate-windows-openvpn-client.md",
+      "redirect_url": "/azure/vpn-gateway/point-to-site-vpn-client-certificate",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/vpn-gateway/point-to-site-vpn-client-certificate-windows-openvpn-client-version-3.md",
+      "redirect_url": "/azure/vpn-gateway/point-to-site-vpn-client-certificate",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/vpn-gateway/point-to-site-certificate-client-linux-azure-vpn-client.md",
+      "redirect_url": "/azure/vpn-gateway/point-to-site-vpn-client-certificate",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/vpn-gateway/point-to-site-vpn-client-certificate-openvpn-linux.md",
+      "redirect_url": "/azure/vpn-gateway/point-to-site-vpn-client-certificate",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/vpn-gateway/point-to-site-vpn-client-certificate-ike-linux.md",
+      "redirect_url": "/azure/vpn-gateway/point-to-site-vpn-client-certificate",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/vpn-gateway/point-to-site-vpn-client-cert-mac.md",
+      "redirect_url": "/azure/vpn-gateway/point-to-site-vpn-client-certificate",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/vpn-gateway/point-to-site-vpn-client-certificate-openvpn-mac.md",
+      "redirect_url": "/azure/vpn-gateway/point-to-site-vpn-client-certificate",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/vpn-gateway/point-to-site-vpn-client-certificate-openvpn-ios.md",
+      "redirect_url": "/azure/vpn-gateway/point-to-site-vpn-client-certificate",
       "redirect_document_id": false
     },
     {
