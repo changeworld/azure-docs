@@ -20,7 +20,7 @@ The capacity pool that you want to move the cache volume to must already exist a
 
 ## Considerations
 
-* You can move a cache volume between capacity pools within the same NetApp account. However, moving a cache volume to a capacity pool in a different NetApp account is not supported.
+* You can move a cache volume between capacity pools within the same NetApp account. However, moving a cache volume to a capacity pool in a different NetApp account isn't supported.
 
 * You can't convert a Flexible service level capacity pool to Standard, Premium, or Ultra. Standard, Premium, and Ultra service level capacity pools can't be converted to the Flexible service level.
 
